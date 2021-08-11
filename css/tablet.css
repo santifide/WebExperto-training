@@ -1,0 +1,67 @@
+/* @import url(style.css); */
+header nav ul {
+    display: inline-flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+header nav ul li{
+    padding-left: calc(var(--general-space) * 4);
+}
+
+figure.container-logo-header{
+    max-width: 25%;
+}
+
+header{
+    justify-content: space-between;
+    padding: calc(var(--general-space) *2 );
+}
+
+header nav {
+   width: 75%;
+}
+/* 
+section.section-container-articles article:nth-child(2), section.section-container-articles article:nth-child(3){
+    width: calc((100% - var(--general-space) *4 )/2);
+}
+
+section.section-container-articles article:nth-child(4){
+    width: calc((100% - var(--general-space) *4 ) * 3 / 4);
+}
+
+section.section-container-articles article:nth-child(5){
+    width: calc((100% - var(--general-space) *4 )  / 4);
+
+} */
+
+section.section-container-articles section:nth-child(1){
+    display: flex;
+    flex-wrap: wrap;
+}
+section.section-container-articles section:nth-child(1) article{
+    width: calc((100% - var(--general-space) *4 )/2);
+}
+
+.images-article h3{
+    width:100%;
+    margin:0;    
+    height: fit-content;
+}
+
+
+.images-article figure, .images-article picture {
+    width:calc(50% - var(--general-space) * 2 );
+    display: inline-block;
+    align-self: stretch;
+}
+
+
+.images-article{
+    width:calc(70% - var(--general-space) * 2 );
+}
+
+.box-form{
+    width: calc(30% - var(--general-space) * 2 );
+}
+

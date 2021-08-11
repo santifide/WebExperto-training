@@ -1,0 +1,7 @@
+.two-articles-container article, .images-article figure, .images-article picture{
+    width: calc(50% - var(--general-space) * 2 );
+}
+
+.images-article h3{
+    width: 100%;
+}

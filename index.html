@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de Web-Experto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/576px.css" media="screen and (min-width:576px)">
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width:768px)">
+    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width:1200px)">
+    <script>
+        function ToogleColorMode() {
+            var element = document.body;
+            element.classList.toggle("black");
+        }     
+    </script>
+
+</head>
+<body>
+    <header>
+    <div>
+        <figure class="container-logo-header">
+            <img src="GRAPHIC-RESOURCES/logo_dark.png"  alt="logo de WebExperto" id="logo-white-background">
+            <img src="GRAPHIC-RESOURCES/webexperto-01.svg" alt="logo de WebExperto" id="logo-dark-background">
+        </figure>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Contenido
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="ToogleColorMode()">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <main>
+        <section class="link-sections box">
+            <h3>Secciones</h3>
+            <button class="title-button box">
+                <a href="#titulo-1">Título 1</a>
+            </button>
+            <button class="title-button box">
+                <a href="#titulo-2">Título 2</a>    
+            </button>
+            <button class="title-button box">
+                <a href="#titulo-3">Título 3</a>    
+            </button>
+            <button class="title-button box">
+                <a href="#imagenes">Imágenes</a>    
+            </button>
+            <button class="title-button box">
+                <a href="#form">Form</a>    
+            </button>
+        </section>
+        <section class="section-container-articles">
+            <article class="box" id="titulo-1">
+                <h3>Título</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, sunt ea! Velit facilis veritatis animi sit aut distinctio placeat, consequuntur dolorum culpa, incidunt quam praesentium, laboriosam dolores dignissimos nihil natus.
+                </p>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, sunt ea! Velit facilis veritatis animi sit aut distinctio placeat, consequuntur dolorum culpa, incidunt quam praesentium, laboriosam dolores dignissimos nihil natus.
+                </p>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, sunt ea! Velit facilis veritatis animi sit aut distinctio placeat, consequuntur dolorum culpa, incidunt quam praesentium, laboriosam dolores dignissimos nihil natus.
+                </p>
+            </article>
+
+            <section class="two-articles-container">
+                <article class="box" id="titulo-2">
+                    <h3>Título 2</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, sunt ea! Velit facilis veritatis animi sit aut distinctio placeat, consequuntur dolorum culpa, incidunt quam praesentium, laboriosam dolores dignissimos nihil natus.
+                    </p>
+                    <button class="box"> link</button>
+                </article>
+                <article class="box" id="titulo-3">
+                    <h3>Título 3</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, sunt ea! Velit facilis veritatis animi sit aut distinctio placeat, consequuntur dolorum culpa, incidunt quam praesentium, laboriosam dolores dignissimos nihil natus.
+                    </p>
+                    <button class="box">link</button>
+                </article>        
+            </section>
+
+
+            <section class="container-images-and-form">
+                <article class="box images-article" id="imagenes">
+                    <h3>Imágenes</h3>
+                    
+                        <figure class="box">
+                            Sin Optimizar
+                            <img src="http://via.placeholder.com/1280x720
+                            " alt="">
+                        </figure>
+                        <picture class="box">
+                            Optimizada
+                            <source srcset="http://via.placeholder.com/1280x720"
+                                    media="(min-width: 800px)">
+                            <img src="http://via.placeholder.com/640x360" alt="" />
+                        </picture>
+                        
+                </article>
+                <article class="box box-form" id="form">
+                    <h3>Form</h3>
+                    <form action="" class="form">
+                        <label for="nombre">
+                            <span>Nombre*</span><br>
+                            <input type="text" placeholder="Nombre" name="name" id="nombre"><br>
+                        </label>
+                        <label for="apellido">
+                            <span>Apellido*</span><br>
+                            <input type="text" placeholder="Apellido" name="apellido" id="apellido"><br>
+                        </label>
+                        <label for="sexo">
+                            <span>Sexo*</span><br>
+                            <input list="sexo"><br>
+                            <datalist id="sexo">
+                                <option value="hombre">hombre</option>
+                                <option value="mujer">mujer</option>
+                            </datalist>
+                        </label>
+                        <button class="button-form">Enviar</button>
+                    </form>
+                </article>
+            </section>
+            
+        </section>  
+    </main>
+
+    <footer>
+        <div class="text-container-footer">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias impedit recusandae, mollitia explicabo saepe quas ex earum at voluptatem amet iusto, voluptas suscipit. Sapiente minima blanditiis sed autem pariatur praesentium.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias impedit recusandae, mollitia explicabo saepe quas ex earum at voluptatem amet iusto, voluptas suscipit. Sapiente minima blanditiis sed autem pariatur praesentium.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias impedit recusandae, mollitia explicabo saepe quas ex earum at voluptatem amet iusto, voluptas suscipit. Sapiente minima blanditiis sed autem pariatur praesentium.</p>
+        </div>
+        <figure>
+            <img src="GRAPHIC-RESOURCES/webexperto-01.svg" alt="logo de WebExperto">
+        </figure>
+    </footer>
+</body>
+</html>

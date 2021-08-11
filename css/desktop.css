@@ -1,0 +1,45 @@
+section.link-sections{
+    display: none;
+}
+
+main, footer > *{
+    max-width: 100rem;
+    margin: auto;
+}
+
+header {
+    justify-content: center;
+}
+header div{
+    width: 100rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: calc(var(--general-space)*4) calc(var(--general-space)*2);
+}
+
+
+.section-container-articles{
+    width: 100%;
+}
+section.section-container-articles > article:first-child{
+    width: calc(20% - var(--general-space) * 4 );
+}
+
+section.section-container-articles > section:nth-child(2){
+    width: calc(35% - var(--general-space) * 4 );
+}
+
+section.section-container-articles > section:nth-child(3){
+    width: 45%;
+}
+
+.container-images-and-form > article {
+    width:100%
+}
+
+section.two-articles-container > article, .container-images-and-form > article{
+    height: calc(50% - var(--general-space) * 2 );
+    width: 100%;
+}
+}
